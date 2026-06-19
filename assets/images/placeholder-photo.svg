@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice">
+  <rect width="600" height="400" fill="#f1f7f6" rx="6"/>
+  <g fill="#d7e9e6">
+    <rect x="24" y="24" width="240" height="160" rx="6"/>
+    <rect x="280" y="24" width="296" height="120" rx="6"/>
+    <rect x="280" y="160" width="296" height="88" rx="6"/>
+  </g>
+  <text x="50%" y="70%" font-family="Inter, Arial, sans-serif" font-size="18" fill="#a7c6bf" text-anchor="middle">[IMAGE]</text>
+</svg>

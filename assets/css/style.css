@@ -469,8 +469,12 @@ section {
   color: var(--color-gray-medium);
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   position: relative;
+  background-image: url('/assets/images/hero-photo.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-photo::before {
@@ -520,7 +524,7 @@ section {
   border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 28px;
   box-shadow: var(--shadow-sm);
-  padding: var(--spacing-2xl);
+  padding: var(--spacing-xl);
 }
 
 .card-icon {
