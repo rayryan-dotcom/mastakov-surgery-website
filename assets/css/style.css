@@ -145,8 +145,8 @@ header {
   max-width: 1200px;
   margin: 0 auto;
   padding: var(--spacing-md) var(--spacing-md) 0;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: var(--spacing-lg);
 }
@@ -160,8 +160,9 @@ header {
 
 .nav-links {
   display: flex;
-  gap: var(--spacing-lg);
+  gap: calc(var(--spacing-lg) * 1.25);
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -222,6 +223,14 @@ header {
   cursor: pointer;
   transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
   text-decoration: none;
+}
+
+.btn-appointment {
+  background: var(--color-secondary);
+  color: white;
+  box-shadow: 0 8px 18px rgba(11,107,103,0.12);
+  padding: 0.8rem 1.25rem;
+  border-radius: 10px;
 }
 
 .btn-primary {
@@ -525,6 +534,15 @@ section {
   border-radius: 28px;
   box-shadow: var(--shadow-sm);
   padding: var(--spacing-xl);
+}
+
+.card .card-image {
+  height: 160px;
+  background-image: url('/assets/images/placeholder-photo.svg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  margin-bottom: var(--spacing-md);
 }
 
 .card-icon {
