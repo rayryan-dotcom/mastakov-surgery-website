@@ -1,15 +1,15 @@
 # Cloudflare Pages build configuration
-name = "Dr Mastakov Surgery Website"
+name = "dr-mastakov-surgery-website"
 type = "static"
 
 [env.production]
-name = "Production"
+name = "production"
 routes = [
   { pattern = "mastakovsurgery.com.au", zone_name = "mastakovsurgery.com.au" }
 ]
 
 [env.staging]
-name = "Staging"
+name = "staging"
 routes = [
   { pattern = "staging.mastakovsurgery.com.au", zone_name = "mastakovsurgery.com.au" }
 ]
