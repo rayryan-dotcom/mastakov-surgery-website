@@ -5,7 +5,11 @@
 :root {
   --color-primary: #007b76; /* teal used for CTAs */
   --color-primary-dark: #005e58;
-  --color-accent: #00bfa5;
+    max-width: 48ch;
+    font-size: 3.6rem;
+    line-height: 1.02;
+    letter-spacing: -0.03em;
+  }
   --color-secondary: #0b6b67;
   --color-gray-light: #f4f7f8;
   --color-gray-medium: #9aa6a4;
@@ -14,9 +18,21 @@
   --color-border: #e6efee;
   --color-alert: #d32f2f;
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+
+.btn-secondary {
+  background: white;
+  color: var(--color-primary);
+  border: 1px solid rgba(0, 150, 136, 0.12);
+  padding: 0.7rem 1.25rem;
+  border-radius: 999px;
+}
+
+.btn-secondary:hover {
+  background: rgba(0,150,136,0.06);
+}
   --font-serif: 'Merriweather', Georgia, 'Times New Roman', serif;
   --shadow-sm: 0 4px 10px rgba(14, 30, 24, 0.06);
-  --shadow-md: 0 8px 30px rgba(14, 30, 24, 0.09);
+  height: 180px;
   --shadow-lg: 0 20px 40px rgba(14, 30, 24, 0.12);
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
@@ -537,7 +553,7 @@ section {
   background: white;
   border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 28px;
-  box-shadow: var(--shadow-sm);
+    box-shadow: 0 6px 18px rgba(14,30,24,0.06);
   padding: var(--spacing-xl);
 }
 
