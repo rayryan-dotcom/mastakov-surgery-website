@@ -344,7 +344,7 @@ section {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: 1.2fr 0.95fr;
   gap: var(--spacing-3xl);
   align-items: center;
   position: relative;
@@ -411,6 +411,9 @@ section {
 .hero-panel {
   display: grid;
   gap: var(--spacing-md);
+  /* elevate panel to overlap hero area like the mockup */
+  transform: translateY(36px);
+  transition: transform 0.25s ease;
 }
 
 .hero-panel-card,
@@ -422,9 +425,10 @@ section {
 }
 
 .hero-panel-card {
-  padding: var(--spacing-xl);
+  padding: calc(var(--spacing-lg) * 2);
   display: grid;
   gap: var(--spacing-lg);
+  border-radius: 20px;
 }
 
 .hero-panel-card h3 {
@@ -472,9 +476,8 @@ section {
 
 .hero-photo {
   padding: var(--spacing-3xl);
-  display: grid;
-  place-items: center;
-  min-height: 320px;
+  display: block;
+  min-height: 360px;
   color: var(--color-gray-medium);
   font-weight: 700;
   text-transform: uppercase;
@@ -484,6 +487,8 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  border-radius: 16px;
+  box-shadow: var(--shadow-md);
 }
 
 .hero-photo::before {
@@ -610,6 +615,10 @@ section {
   .hero-media-footer {
     grid-template-columns: 1fr;
   }
+
+  .hero-panel {
+    transform: none;
+  }
 }
 
 @media (max-width: 680px) {
@@ -630,6 +639,28 @@ section {
 
   .nav-links {
     justify-content: flex-start;
+  }
+
+  .hero-photo {
+    min-height: 220px;
+    border-radius: 12px;
+    padding: var(--spacing-lg);
+  }
+}
+
+/* Desktop tweaks to match the mockup spacing */
+@media (min-width: 901px) {
+  .hero {
+    padding-top: calc(var(--spacing-3xl) + 1.5rem);
+    padding-bottom: calc(var(--spacing-3xl) + 1.5rem);
+  }
+
+  .hero-copy h1 {
+    max-width: 46ch;
+  }
+
+  .hero-panel {
+    align-self: start;
   }
 }
 
