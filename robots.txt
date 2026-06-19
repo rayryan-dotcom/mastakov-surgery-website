@@ -3,7 +3,7 @@ Allow: /
 Disallow: /admin/
 Disallow: /api/
 
-Sitemap: https://mastakovsurgery.com.au/sitemap.xml
+Sitemap: https://8ca93163.mastakov-surgery-website-2.pages.dev/sitemap.xml
 
 # Delay for aggressive crawlers
 User-agent: MJ12bot

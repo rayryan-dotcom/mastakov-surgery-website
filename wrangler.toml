@@ -1,6 +1,7 @@
 # Cloudflare Pages build configuration
 name = "dr-mastakov-surgery-website"
 type = "static"
+pages_build_output_dir = "."
 
 [env.production]
 name = "production"
