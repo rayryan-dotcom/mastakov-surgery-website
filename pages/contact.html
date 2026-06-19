@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Request an Appointment - Dr Mastakov Surgery</title>
+  <meta name="description" content="Request an appointment with Dr Mastakov. Complete our appointment form and we'll contact you within 48 hours.">
+  <link rel="canonical" href="https://mastakovsurgery.com.au/contact/">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header>
+    <div class="alert-bar">
+      ⭐ Proudly supporting patients in Bundaberg and across the Wide Bay
+    </div>
+    
+    <div class="header-top">
+      <div class="header-top-content">
+        <div class="contact-info">
+          <div class="contact-item">📞 <strong>Appointments:</strong> 07 3414 3950</div>
+          <div class="contact-item">📞 <strong>Hervey Bay:</strong> 07 4148 7082</div>
+        </div>
+      </div>
+    </div>
+    
+    <nav class="nav-header">
+      <div class="logo">🏥 Dr Mastakov Surgery</div>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/pages/about.html">About Dr Mastakov</a>
+        <a href="/pages/procedures.html">Procedures</a>
+        <a href="/pages/locations.html">Locations</a>
+        <a href="/pages/patient-info.html">Patient Info</a>
+        <a href="/pages/contact.html">Contact</a>
+        <a href="/pages/contact.html" class="btn-appointment">Request an Appointment</a>
+      </nav>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1 style="margin-top: 0;">Contact Mastakov Surgery</h1>
+      <p style="font-size: 1.125rem;">For booking an appointment, please complete the form below and the practice will reply within 48 hours.</p>
+    </section>
+
+    <section>
+      <h2>Appointment Request Form</h2>
+
+      <div class="form-alert form-alert-emergency">
+        <strong>⚠️ Medical Emergency?</strong> Call 000 immediately.
+        For after-hours concerns about your surgery or condition, call 07 4148 7082.
+      </div>
+
+      <form id="appointment-form" method="POST" action="/api/forms" data-cf-turnstile-site-key="TURNSTILE_KEY">
+        <div class="form-group">
+          <label for="first_name" class="form-required">First Name</label>
+          <input type="text" id="first_name" name="first_name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="form-required">Email</label>
+          <input type="email" id="email" name="email" required>
+          <p class="form-note">We'll use this to confirm your appointment</p>
+        </div>
+
+        <div class="form-group">
+          <label for="phone" class="form-required">Phone</label>
+          <input type="tel" id="phone" name="phone" required>
+          <p class="form-note">Include area code (e.g., 07 1234 5678)</p>
+        </div>
+
+        <div class="form-group">
+          <label for="postcode">Postcode</label>
+          <input type="text" id="postcode" name="postcode">
+        </div>
+
+        <div class="form-group">
+          <label for="heard_about" class="form-required">How did you hear about us?</label>
+          <select id="heard_about" name="heard_about" required>
+            <option value="">-- Select an option --</option>
+            <option value="gp">GP / health professional referral</option>
+            <option value="friend">Friend or family referral</option>
+            <option value="google">Google</option>
+            <option value="social">Facebook/Instagram</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group" id="other-details" style="display: none;">
+          <label for="heard_about_other">Please tell us more</label>
+          <input type="text" id="heard_about_other" name="heard_about_other">
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject / Type of Surgery (optional)</label>
+          <input type="text" id="subject" name="subject" placeholder="e.g., Weight loss surgery enquiry">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message (optional)</label>
+          <textarea id="message" name="message" placeholder="Tell us a bit about your enquiry..."></textarea>
+        </div>
+
+        <!-- Honeypot field (anti-spam) -->
+        <input type="text" name="url" style="display: none; position: absolute; left: -9999px;">
+
+        <div class="form-group">
+          <div class="checkbox-group">
+            <input type="checkbox" id="emergency_acknowledgement" name="emergency_acknowledgement" required>
+            <label for="emergency_acknowledgement" style="margin: 0;">
+              I understand this form is for appointment enquiries only and should not be used for medical emergencies. For medical emergencies call 000.
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <p class="form-note">
+            <strong>Privacy:</strong> All information is kept secure and will not be shared or sold to any third party. We use your information only to contact you about your appointment.
+          </p>
+        </div>
+
+        <!-- Cloudflare Turnstile will be inserted here if enabled -->
+        <div id="cf-turnstile"></div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: var(--spacing-lg);">Submit Appointment Request</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Other Ways to Contact Us</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <h3>📞 Phone</h3>
+          <p><strong>Brisbane & Gold Coast:</strong><br>07 3414 3950</p>
+          <p><strong>Hervey Bay:</strong><br>07 4148 7082</p>
+          <p><strong>Mobile:</strong><br>0491 688 212</p>
+          <p style="font-size: 0.875rem; color: var(--color-gray-medium);">Mon–Fri: 9:00 am – 5:00 pm</p>
+        </div>
+
+        <div class="card">
+          <h3>📠 Fax</h3>
+          <p>07 3319 6338</p>
+          <p style="margin-bottom: 0; font-size: 0.875rem; color: var(--color-gray-medium);">For non-urgent queries</p>
+        </div>
+
+        <div class="card">
+          <h3>📍 Visit Us</h3>
+          <p><strong>Sunnybank, Cleveland, Gold Coast, Hervey Bay</strong></p>
+          <a href="/pages/locations.html">View all locations →</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>What to Expect</h2>
+      <ul>
+        <li><strong>Within 48 hours:</strong> You'll receive a call or email confirming your appointment</li>
+        <li><strong>Before your appointment:</strong> Complete the relevant patient questionnaire</li>
+        <li><strong>At your consultation:</strong> Dr Mastakov will assess your needs and discuss options</li>
+        <li><strong>After your visit:</strong> We'll provide clear information about next steps</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Practice</h4>
+        <a href="/">Home</a>
+        <a href="/pages/about.html">About Dr Mastakov</a>
+        <a href="/pages/procedures.html">Procedures</a>
+        <a href="/pages/locations.html">Locations</a>
+      </div>
+      <div class="footer-section">
+        <h4>Patient Information</h4>
+        <a href="/pages/patient-info.html">Patient Info</a>
+        <a href="/pages/contact.html">Contact</a>
+      </div>
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>📞 Appointments: 07 3414 3950<br>
+           📞 Hervey Bay: 07 4148 7082<br>
+           📱 Mobile: 0491 688 212<br>
+           Fax: 07 3319 6338</p>
+      </div>
+      <div class="footer-section">
+        <h4>Hours</h4>
+        <p>Monday–Friday: 9:00 am – 5:00 pm<br>
+           Saturday & Sunday: Closed<br><br>
+           <strong>For medical emergencies, call 000.</strong></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Dr Mastakov Surgery. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Show/hide "other details" field
+    document.getElementById('heard_about').addEventListener('change', function() {
+      const otherDetails = document.getElementById('other-details');
+      if (this.value === 'other') {
+        otherDetails.style.display = 'block';
+      } else {
+        otherDetails.style.display = 'none';
+      }
+    });
+  </script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

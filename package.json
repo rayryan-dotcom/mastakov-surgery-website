@@ -1,0 +1,29 @@
+{
+  "name": "mastakov-surgery-website",
+  "version": "1.0.0",
+  "description": "Dr Mastakov Surgery - Static website for Cloudflare Pages",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'No build step required - static site'",
+    "start": "python -m http.server 8000 || python -m SimpleHTTPServer 8000",
+    "deploy": "git push origin main"
+  },
+  "keywords": [
+    "surgery",
+    "weight loss surgery",
+    "hernia repair",
+    "bariatric",
+    "Brisbane",
+    "Gold Coast",
+    "Hervey Bay"
+  ],
+  "author": "Dr Mastakov Surgery",
+  "license": "PROPRIETARY",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:rayzatech.com.au/mastakov-surgery-website.git"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
